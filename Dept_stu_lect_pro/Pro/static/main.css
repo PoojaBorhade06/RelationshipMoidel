@@ -1,0 +1,51 @@
+.my_navbar
+{
+background-color:hotpink;
+list-style-type:none;
+overflow:hidden;
+font-size:25px
+
+}
+
+li
+{
+float:left;
+}
+
+li a
+{
+display:block;
+color:White;
+text-align:center;
+text-decoration:none;
+padding:14px 16px:
+
+}
+
+
+li a:hover
+{
+background-color:red;
+}
+
+
+.active{
+background-color:yellow;
+
+}
+
+header h1
+{
+background-color:none;
+text-align:center;
+}
+
+footer h5
+{
+background-color:gray;
+text-align:center;
+padding: 15px 15px 15px 10px;
+}
+
+
+

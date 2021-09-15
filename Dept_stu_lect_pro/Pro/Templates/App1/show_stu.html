@@ -1,0 +1,30 @@
+{% extends 'App1/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container">
+  <table border="5px">
+    <tr>
+      <th>ID</th>
+      <th>RollNO</th>
+        <th>Name</th>
+        <th>Marks</th>
+        <th>Dept</th>
+    </tr>
+    {% for p in st %}
+    <tr>
+      <td>{{p.id}}</td>
+       <td>{{p.stu_rn}}</td>
+       <td>{{p.stu_name}}</td>
+        <td>{{p.stu_marks}}</td>
+        <td>{{p.Dept_stud}}</td>
+        <td><a href="{% url 'up_stu' p.id %}"><button class="btn btn-warning">Update</button></a></td>
+        <td><a href="{% url 'de_stu' p.id %}"><button class="btn btn-danger">Delete</button></a></td>
+
+    </tr>
+    </tr>
+    {% endfor %}
+  </table>
+
+
+{% endblock %}
